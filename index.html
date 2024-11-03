@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portfolio de Souhail Lasfar</title>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <!-- En-tête -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <a href="#" class="text-2xl font-bold">Souhail Lasfar</a>
+            <nav class="space-x-6">
+                <a href="#introduction" class="hover:text-blue-500 transition">Accueil</a>
+                <a href="#projets" class="hover:text-blue-500 transition">Projets</a>
+                <a href="#competences" class="hover:text-blue-500 transition">Compétences</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section d'Introduction -->
+    <section id="introduction" class="flex flex-col items-center justify-center p-10 bg-gray-800 shadow-lg rounded-lg mt-8 mx-4">
+        <img src="/img/souhail.png" alt="Souhail Lasfar" class="rounded-full w-32 h-32 mb-4 border-4 border-red-600 shadow">
+        <h1 class="text-4xl font-bold text-center">Bonjour, je suis <span class="text-blue-500">Souhail</span></h1>
+        <p class="mt-4 text-center text-gray-300 max-w-lg">Développeur web passionné, je crée des solutions numériques innovantes. Mon objectif est d'améliorer mes compétences et de réaliser des projets uniques qui font la différence.</p>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="container mx-auto p-10">
+        <h2 class="text-3xl font-bold text-center mb-8 text-red-500">Mes Projets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Projet 1</h3>
+                <p>Description brève du projet 1. Technologies utilisées : HTML, CSS, JavaScript.</p>
+                <a href="lien-du-projet" target="_blank" class="text-blue-500 hover:underline">Voir le projet</a>
+                <img src="/img/projet1.png" alt="Capture d'écran du projet 1" class="mt-2 rounded shadow">
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="text-xl font-semibold">Projet 2</h3>
+                <p>Description brève du projet 2. Technologies utilisées : React, Node.js.</p>
+                <a href="lien-du-projet" target="_blank" class="text-blue-500 hover:underline">Voir le projet</a>
+                <img src="/img/projet2.png" alt="Capture d'écran du projet 2" class="mt-2 rounded shadow">
+            </div>
+            <!-- more project -->
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="container mx-auto p-10 bg-gray-800 shadow-md rounded-lg mt-8">
+        <h2 class="text-3xl font-bold text-center mb-4 text-red-500">Mes Compétences</h2>
+        <ul class="list-disc list-inside space-y-2">
+            <li class="flex items-center"><i class="fa-solid fa-code text-blue-500 mr-2 text-2xl"></i>Langages de Programmation : <span class="font-semibold">HTML, CSS, JavaScript</span></li>
+            <li class="flex items-center"><i class="fa-solid fa-cube text-blue-500 mr-2 text-2xl"></i>Frameworks et Bibliothèques : <span class="font-semibold">React, Bootstrap, Tailwind CSS</span></li>
+            <li class="flex items-center"><i class="fa-solid fa-tools text-blue-500 mr-2 text-2xl"></i>Outils et Technologies : <span class="font-semibold">Git, Docker</span></li>
+        </ul>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="temoignages" class="container mx-auto p-10 bg-gray-800 shadow-md rounded-lg mt-8">
+        <h2 class="text-3xl font-bold text-center mb-4 text-red-500">Ce que disent mes clients/mentors</h2>
+        <blockquote class="border-l-4 border-red-500 pl-4 italic mb-4">"Souhail est un développeur exceptionnel !" - Client 1</blockquote>
+        <blockquote class="border-l-4 border-red-500 pl-4 italic">"Son travail est toujours de haute qualité." - Client 2</blockquote>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto p-10 bg-gray-800 shadow-md rounded-lg mt-8">
+        <h2 class="text-3xl font-bold text-center mb-4 text-red-500">Contactez-moi</h2>
+        
+        <!-- Barre de Contact Direct -->
+        <div class="text-center mb-6">
+            <p class="text-lg">Téléphone : <span class="text-blue-500">(212) 708-878867</span></p>
+            <p class="text-lg">Email : <span class="text-blue-500">souhaildon007@gmail.com</span></p>
+        </div>
+        
+        <form class="bg-gray-700 p-5 rounded-lg shadow">
+            <label for="name" class="block mb-2">Nom :</label>
+            <input type="text" id="name" name="name" required class="border border-gray-600 p-2 w-full mb-4 rounded bg-gray-800 text-gray-300">
+            <label for="email" class="block mb-2">Email :</label>
+            <input type="email" id="email" name="email" required class="border border-gray-600 p-2 w-full mb-4 rounded bg-gray-800 text-gray-300">
+            <label for="message" class="block mb-2">Message :</label>
+            <textarea id="message" name="message" required class="border border-gray-600 p-2 w-full mb-4 rounded bg-gray-800 text-gray-300"></textarea>
+            <button type="submit" class="bg-red-600 text-white p-2 rounded hover:bg-red-700 transition">Envoyer</button>
+        </form>
+        <div class="social-links mt-4 text-center">
+            <a href="https://linkedin.com/in/votreprofil" target="_blank" class="mx-2 text-blue-500 hover:text-blue-400 text-3xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/souhaillasfar" target="_blank" class="mx-2 text-blue-500 hover:text-blue-400 text-3xl"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Souhail Lasfar. Tous droits réservés.</p>
+        <a href="#" class="text-blue-500 hover:underline">Conditions d'utilisation</a>
+        <a href="#" class="text-blue-500 hover:underline">Politique de confidentialité</a>
+    </footer>
+</body>
+</html>
